@@ -1,0 +1,79 @@
+{
+  "name": "npm_scripts_boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Greg Rickaby <greg@gregrickaby.com>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregrickaby/npm-scripts-boilerplate.git"
+  },
+  "keywords": [
+    "npm",
+    "scripts",
+    "npm scripts",
+    "watch",
+    "minify",
+    "compress"
+  ],
+  "bugs": {
+    "url": "https://github.com/gregrickaby/npm-scripts-boilerplate/issues"
+  },
+  "homepage": "https://github.com/gregrickaby/npm-scripts-boilerplate#readme",
+  "main": "src/js/app.js",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/free-regular-svg-icons": "^5.10.2",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "autoprefixer": "^9.6.1",
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.1.0",
+    "copy-files-from-to": "^2.1.0",
+    "jquery": "3.3.1",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^6.0.0",
+    "popper.js": "1.14.7",
+    "postcss-cli": "^6.1.3",
+    "posthtml": "^0.11.6",
+    "posthtml-cli": "^0.5.1",
+    "posthtml-modules": "^0.4.2",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.23.1",
+    "sass": "^1.23.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "uglify-es": "^3.3.9"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "copy": "copy-files-from-to",
+    "optimizecss": "postcss dist/css/app.css -c postcss.config.js -o dist/css/app.css",
+    "scss": "sass src/scss:dist/css",
+    "lint": "eslint src/js || true",
+    "lint-scss": "stylelint src/scss/*.scss --syntax scss  || eslint src/js",
+    "rollup": "rollup -c",
+    "serve": "browser-sync start --config browser-sync.js",
+    "build:css": "run-s lint-scss scss",
+    "build:js": "run-s lint rollup",
+    "build:html": "posthtml -c .posthtmlrc",
+    "build": "run-s clean copy build:*",
+    "watch:css": "onchange \"src/scss\" -- run-s build:css",
+    "watch:js": "onchange \"src/js\" -- run-s build:js",
+    "watch:html": "onchange \"src/**/*.html\" -- run-s build:html",
+    "start": "npm run build && run-p serve watch:*",
+    "postinstall": "run-s build"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "eslintConfig": {
+    "extends": "eslint:recommended"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-recommended"
+  }
+}

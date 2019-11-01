@@ -1,0 +1,9 @@
+{
+  "input": "src/*.html",
+  "output": "dist",
+  "plugins": {
+    "posthtml-modules":{
+        root: 'html-modules'
+    }
+  }
+}

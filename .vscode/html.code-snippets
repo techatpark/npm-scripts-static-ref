@@ -1,0 +1,10 @@
+{
+	"Form": {
+		"scope": "html",
+		"prefix": "fm",
+		"body": [
+			"<form>${1}</form>"
+		],
+		"description": "Log output to console"
+	}
+}
