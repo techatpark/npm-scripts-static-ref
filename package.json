@@ -1,12 +1,12 @@
 {
-  "name": "npm_scripts_boilerplate",
+  "name": "npm_scripts_static-ref",
   "version": "1.0.0",
   "description": "",
-  "author": "Greg Rickaby <greg@gregrickaby.com>",
+  "author": "Sathish Kumar Thiyagarajan",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gregrickaby/npm-scripts-boilerplate.git"
+    "url": "https://github.com/techatpark/npm_scripts_static-ref.git"
   },
   "keywords": [
     "npm",
@@ -17,35 +17,35 @@
     "compress"
   ],
   "bugs": {
-    "url": "https://github.com/gregrickaby/npm-scripts-boilerplate/issues"
+    "url": "https://github.com/techatpark/npm_scripts_static-ref/issues"
   },
-  "homepage": "https://github.com/gregrickaby/npm-scripts-boilerplate#readme",
+  "homepage": "https://github.com/techatpark/npm_scripts_static-ref#readme",
   "main": "src/js/app.js",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.10.2",
-    "@fortawesome/free-brands-svg-icons": "^5.10.2",
-    "@fortawesome/free-regular-svg-icons": "^5.10.2",
-    "@fortawesome/free-solid-svg-icons": "^5.10.2",
-    "autoprefixer": "^9.6.1",
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "autoprefixer": "^9.7.1",
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
-    "eslint": "^6.1.0",
+    "eslint": "^6.6.0",
     "copy-files-from-to": "^2.1.0",
-    "jquery": "3.3.1",
+    "jquery": "3.4.1",
     "mkdirp": "^0.5.1",
     "npm-run-all": "^4.1.5",
-    "onchange": "^6.0.0",
-    "popper.js": "1.14.7",
+    "onchange": "^6.1.0",
+    "popper.js": "1.16.0",
     "postcss-cli": "^6.1.3",
-    "posthtml": "^0.11.6",
+    "posthtml": "^0.12.0",
     "posthtml-cli": "^0.5.1",
     "posthtml-modules": "^0.4.2",
-    "rimraf": "^2.6.3",
-    "rollup": "^1.23.1",
-    "sass": "^1.23.0",
-    "stylelint": "^10.1.0",
-    "stylelint-config-recommended": "^2.2.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.26.2",
+    "sass": "^1.23.3",
+    "stylelint": "^11.1.1",
+    "stylelint-config-recommended": "^3.0.0",
     "uglify-es": "^3.3.9"
   },
   "scripts": {
