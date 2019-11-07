@@ -1,27 +1,21 @@
-
-$fa-font-path: "../webfonts";
-
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims';
-
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
-
-// Custom.scss
-// Option B: Include parts of Bootstrap
-
 // Your variable overrides
 @import 'variables';
 
-// Required
-@import "../../node_modules/bootstrap/scss/bootstrap";
+//@import 'bootstrap';
+
+//@import 'fontawesome';
+
+:fullscreen {
+    background-color: green;
+}
+
+
+@import '../../dist/css/modern';
 
 
 
 
-@import 'sidebar.scss';
-@import 'screen.scss';
+
 
 
  
