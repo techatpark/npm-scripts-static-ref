@@ -4,7 +4,7 @@
             "from": "node_modules/bootstrap/dist/js/bootstrap.min.js",
             "to": "dist/js/bootstrap.min.js"
         },{
-            "from": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+            "from": "node_modules/popper.js/dist/popper.min.js",
             "to": "dist/js/popper.min.js"
         },{
             "from": "node_modules/jquery/dist/jquery.slim.min.js",
