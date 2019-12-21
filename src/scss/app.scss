@@ -1,14 +1,14 @@
 // Import Custom Variables
-@import "variables";
+@import "./utils/variables";
 
-@import "bootstrap";
+@import "./vendors/bootstrap";
 
-@import "fontawesome";
+@import "./vendors/fontawesome";
 
 // Import Custom SCSS
-@import "mixins.scss";
+@import "./utils/mixins";
 @import "global.scss";
-@import "utilities.scss";
-@import "navbar.scss";
-@import "cards.scss";
-@import "footer.scss";
+@import "./utils/utilities";
+@import "./layout/navbar";
+@import "./components/cards";
+@import "./layout/footer";
