@@ -11,10 +11,6 @@ To download the dependencies, we to to install node modules using
 
 > npm i
 
-To build the application
-
-> npm run build
-
 To watch the application on your local browser
 
 > npm start
