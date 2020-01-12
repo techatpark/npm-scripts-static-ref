@@ -1,7 +1,11 @@
+import multiInput from 'rollup-plugin-multi-input';
+ 
 export default {
-    input: './src/js/index.js', // entry point
+    // use glob in the input
+    input: ['src/**/*.js'],
     output: {
-        file: './dist/js/bundle.min.js', // output bundle file
-        format: 'cjs'
-    }
-}
+      format: 'esm',
+      dir: 'dist'
+    },
+    plugins: [ multiInput() ],
+};
