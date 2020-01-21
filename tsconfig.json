@@ -1,13 +1,14 @@
 {
     "compilerOptions": {
         "target": "es5",
+        "allowJs": true,
         "module": "commonjs",
-        "declaration": true,
-        "outDir": "./lib",
+        "outDir": "./dist",
+        "rootDir": "src",
         "strict": true
     },
     "include": [
-        "src"
+        "src/**/*"
     ],
     "exclude": [
         "node_modules",
