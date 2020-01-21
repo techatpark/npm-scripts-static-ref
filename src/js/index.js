@@ -1,1 +1,5 @@
-console.log('i am index');
+function a() {
+    return a;
+}
+
+a();
