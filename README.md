@@ -10,7 +10,7 @@ We have below design goals.
 1. Best Practices and Conventions
 1. Build time Speed 
 
-We carefuly avoided using image optimization during build time as it is good to do images at design time rathet build time.
+We carefuly avoided using image optimization during build time as it is good to do images at design time rather than build time.
 
 ### Setup
 
