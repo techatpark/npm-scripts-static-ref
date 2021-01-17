@@ -3,12 +3,6 @@
         {
             "from": "node_modules/bootstrap/dist/js/bootstrap.min.js",
             "to": "dist/js/bootstrap.min.js"
-        },{
-            "from": "node_modules/popper.js/dist/popper.min.js",
-            "to": "dist/js/popper.min.js"
-        },{
-            "from": "node_modules/jquery/dist/jquery.slim.min.js",
-            "to": "dist/js/jquery.slim.min.js"
         },
         {
             "from": "node_modules/@fortawesome/fontawesome-free/webfonts/**",
